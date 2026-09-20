@@ -9,7 +9,7 @@ import org.koin.dsl.module
 val supabaseModule = module {
     single {
         createSupabaseClient(
-            supabaseUrl = "https://YOUR_SUPABASE_URL.supabase.co",
+            supabaseUrl = "https://ozvzeqcyygabpppwlgzn.supabase.co",
             supabaseKey = "YOUR_SUPABASE_ANON_KEY"
         ) {
             install(Auth)
