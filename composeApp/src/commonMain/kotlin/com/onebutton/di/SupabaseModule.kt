@@ -10,7 +10,7 @@ val supabaseModule = module {
     single {
         createSupabaseClient(
             supabaseUrl = "https://ozvzeqcyygabpppwlgzn.supabase.co",
-            supabaseKey = "YOUR_SUPABASE_ANON_KEY"
+            supabaseKey = "sb_publishable_RG2J4nwZIRb_j5_MkydRig_Gp_8R1VG"
         ) {
             install(Auth)
             install(Postgrest)
