@@ -18,8 +18,7 @@ kotlin {
         }
     }
     
-    @OptIn(ExperimentalWasmDsl::class)
-    wasmJs {
+    js(IR) {
         moduleName = "composeApp"
         browser {
             val rootDirPath = project.rootDir.path
@@ -67,8 +66,8 @@ kotlin {
             implementation(libs.androidx.activity.compose)
             implementation(libs.ktor.client.okhttp)
         }
-        wasmJsMain.dependencies {
-            implementation(libs.ktor.client.core)
+        jsMain.dependencies {
+            implementation(libs.ktor.client.js)
         }
     }
 }

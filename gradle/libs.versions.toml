@@ -6,9 +6,9 @@ android-targetSdk = "34"
 androidx-activityCompose = "1.9.1"
 compose-plugin = "1.6.11"
 kotlin = "2.0.20"
-supabase = "3.0.0-rc-1"
+supabase = "2.6.1"
 ktor = "3.0.0-wasm2" # Need this if we were on ktor 3, but supabase 2.6.1 uses Ktor 2.3.12. Let's use 2.3.12.
-ktor-stable = "3.0.0"
+ktor-stable = "2.3.12"
 voyager = "1.1.0-beta02"
 koin = "3.5.6"
 koin-compose = "1.1.5"
@@ -27,7 +27,7 @@ supabase-gotrue = { module = "io.github.jan-tennert.supabase:gotrue-kt", version
 supabase-realtime = { module = "io.github.jan-tennert.supabase:realtime-kt", version.ref = "supabase" }
 
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor-stable" }
-ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor-stable" }
+ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor-stable" }
 
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
